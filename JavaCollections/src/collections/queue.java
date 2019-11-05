@@ -7,7 +7,7 @@ public class queue {
 		
 		Queue<String> lunchLine = new LinkedList<>();
 		
-		
+		// Load queue values
 		lunchLine.add("Quaid");
 		lunchLine.add("Melina");
 		lunchLine.add("Kuato");
@@ -15,8 +15,10 @@ public class queue {
 		lunchLine.add("Lori");
 		lunchLine.add("Benny");
 		
+		// List stored queue values
 		System.out.println("Total Recall lunch line: " + lunchLine);
 		
+		// Remove first item from queue
 		try {
 			String remove = lunchLine.remove();
 			System.out.println("Now serving " + remove);
@@ -24,6 +26,7 @@ public class queue {
 			
 			
 		}
+		// Check for errors
 		catch (Exception e) {
 			
 			System.out.println("Failed to remove first in line. \n");

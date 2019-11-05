@@ -14,6 +14,7 @@ public class list {
 	
 	}	
 	
+	// Output list elements to screen
 	public static void displayMovieList() {
 		
 		System.out.println("Movie List: \n");
@@ -25,7 +26,7 @@ public class list {
 	
 
 
-
+	// Test Operations: Select specific entry in the list, Delete item, Add item
 	public static void listOperations() {
 		
 		System.out.println();
@@ -42,16 +43,19 @@ public class list {
 		displayMovieList();
 	}
 		
+	// Delete function
 	public static void deleteMovie(int index) {
 		
 		movies.remove(index);
 	}
 		
+	// Add function
 	public static void addMovie(String name) {
 		
 		movies.add(name);
 	}
 	
+	// Main class
 public static void main(String[] args) {
 	new list();
 	displayMovieList();

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class list {
 	static ArrayList<String> movies = new ArrayList<String>();
 	
+	// Add elements to list
 	public list() {
 		movies.add("Lord of the Rings");
 		movies.add("The Matrix");

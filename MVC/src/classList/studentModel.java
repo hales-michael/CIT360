@@ -6,7 +6,7 @@ public class studentModel {
 	private String lastName;
 	private String birthDate;
 	private String gradeLevel;
-	
+
 	
 	public String getFirstName() {
 		return firstName;
@@ -33,6 +33,4 @@ public class studentModel {
 		this.gradeLevel = gradeLevel;
 	}
 	
-	
-
 }

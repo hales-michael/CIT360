@@ -28,17 +28,18 @@ class interrupt {
 	public class threads {	
 	
 		public static void main(String[] args) {
-		// TODO Auto-generated method stub
 			System.out.println("Begin Main Thread...");
 			
-			interrupt interruption = new interrupt();
-			interruption.executeInterrupt();
+
 			
 			for (int i=0; i<10; i++)
 			{
 				threadDemo thread = new threadDemo();
 				thread.start();
 			}
+			
+			interrupt interruption = new interrupt();
+			interruption.executeInterrupt();
 
 	}
 	}

@@ -11,7 +11,7 @@ public class StudentList {
 		
 		sc.updateView();
 			
-		}
+	}
 
 	private static studentModel getStudentDetails() {
 	
@@ -25,6 +25,6 @@ public class StudentList {
 		return student;
 		
 	}
-	}
+}
 
 

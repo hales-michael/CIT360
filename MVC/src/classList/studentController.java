@@ -4,6 +4,7 @@ public class studentController {
 	
 	private studentModel model;
 	private studentView view;
+	
 	public studentController(studentModel model, studentView view) {
 		this.model = model;
 		this.view = view;

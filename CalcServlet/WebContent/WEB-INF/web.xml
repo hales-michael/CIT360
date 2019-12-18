@@ -12,13 +12,13 @@
   </welcome-file-list>
   
     <servlet>
-  <servlet-name>MyHttpServletDemo</servlet-name>
-  <servlet-class>calculator</servlet-class>
+  <servlet-name>calculator</servlet-name>
+  <servlet-class>servletPackage.calculator</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  <servlet-name>MyHttpServletDemo</servlet-name>
-  <url-pattern>/submit</url-pattern>
+  <servlet-name>calculator</servlet-name>
+  <url-pattern>/calculator</url-pattern>
   </servlet-mapping>
   
 </web-app>

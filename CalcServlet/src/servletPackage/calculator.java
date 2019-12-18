@@ -1,3 +1,4 @@
+package servletPackage;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -8,9 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 public class calculator extends HttpServlet {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -19,23 +17,28 @@ public class calculator extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			int n1 = Integer.parseInt(request.getParameter("num1"));
 			int n2 = Integer.parseInt(request.getParameter("num2"));
-			String operation = request.getParameter("op");
+			String operation = request.getParameter("operation");
 			int result = 0;
 			
+//			System.out.println(operation);
+			
+//			operation = "a";
+			
+			
 			switch(operation) {
-			case "a":
+			case "+":
 				result = n1 + n2;
 				break;
 				
-			case "s":
+			case "-":
 				result = n1 - n2;
 				break;
 				
-			case "m":
+			case "*":
 				result = n1 * n2;
 				break;
 				
-			case "d":
+			case "/":
 				result = n1 / n2;
 				break;
 				

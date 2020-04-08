@@ -7,6 +7,7 @@ public class studentModel {
 	private String birthDate;
 	private String gradeLevel;
 
+	// Model of Student data, Get/Set functions.
 	
 	public String getFirstName() {
 		return firstName;

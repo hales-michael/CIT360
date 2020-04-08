@@ -5,6 +5,7 @@ public class studentController {
 	private studentModel model;
 	private studentView view;
 	
+	// Model interface
 	public studentController(studentModel model, studentView view) {
 		this.model = model;
 		this.view = view;
@@ -46,6 +47,7 @@ public class studentController {
 	
 	}
 	
+	// View Interface
 	public void updateView() {
 		view.printStudentDetails(model.getFirstName(), model.getLastName(), model.getBirthDate(), model.getGradeLevel());
 	}

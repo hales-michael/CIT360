@@ -17,9 +17,10 @@ public class StudentList {
 	
 		studentModel student = new studentModel();
 		
-		student.setFirstName("Joe");
-		student.setLastName("Schmoe");
-		student.setBirthDate("5/15/1975");
+		// Hard-coded student details to be printed to screen by the controller
+		student.setFirstName("Wesley");
+		student.setLastName("Crusher");
+		student.setBirthDate("3/14/2347");
 		student.setGradeLevel("Senior");
 		
 		return student;

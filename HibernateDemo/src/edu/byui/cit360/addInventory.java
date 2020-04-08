@@ -12,9 +12,9 @@ public class addInventory {
 		Session session = sessFact.getCurrentSession();
 		org.hibernate.Transaction tr = session.beginTransaction();
 		Inventory inv = new Inventory();
-		inv.setName("Doohickey");
-		inv.setColor("Green");
-		inv.setPrice((float) 19.99);
+		inv.setName("Slighty-used Severed Android Head");
+		inv.setColor("Unknown");
+		inv.setPrice((float) 2500000);
 		session.save(inv);
 		tr.commit();
 		System.out.println("Successfully inserted");

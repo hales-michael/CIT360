@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 
-
+// Adds items to inventory
 public class addInventory {
 	public static void main(String[] args) throws Exception {
 

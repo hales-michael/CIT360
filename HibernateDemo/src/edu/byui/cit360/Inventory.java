@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
+// Inventory model
+
 @Entity
 @Table(name = "inventory")
 

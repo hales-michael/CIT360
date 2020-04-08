@@ -28,7 +28,7 @@ public class runnableDemo implements Runnable {
             @Override
             public void run() {
                 
-                // We are doing the same thing as with the MyRunnableImplementation class
+
                 for (int i=1;i<10;i++) {
                     System.out.println(Thread.currentThread().getName() +
                             ", item number " + i);

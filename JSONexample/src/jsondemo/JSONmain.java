@@ -59,7 +59,7 @@ public class JSONmain {
 		obj.put("Name", empName);
 		obj.put("Title", title);
 		obj.put("Department", dept);
-		obj.put("YearsEmployeed", years);
+		obj.put("YearsEmployed", years);
 		obj.put("PayRate", rate);
 		
 		return obj;
@@ -94,16 +94,15 @@ public class JSONmain {
 		String name = (String) jo.get("Name");
 		String title = (String) jo.get("Title");
 		String dept = (String) jo.get("Department");
-		int years = (int) jo.get("YearsEmployed");
-		float rate = (float) jo.get("Payrate");
+
 		
 		
 		System.out.println("Printing Employee Record...\n");
 		System.out.println("Employee's Name is " + name);
 		System.out.println("Employee's title is " + title);
 		System.out.println("Employee's department is " + dept);
-		System.out.println("Number of years employed is " + years);
-		System.out.println("Employee's pay rate is " + rate);
+		System.out.println("Number of years employed is " + jo.get("YearsEmployed"));
+		System.out.println("Employee's pay rate is " + jo.get("PayRate"));
 		
 
 	}

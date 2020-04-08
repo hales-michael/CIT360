@@ -33,6 +33,11 @@ public class JUnit {
 		} else {
 		return a / b;}
 	}
+	
+	public static boolean login (boolean loginState) {
+
+		return loginState;
+	}
 		
 		
 }

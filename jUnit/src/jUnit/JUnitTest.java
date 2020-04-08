@@ -1,6 +1,8 @@
 package jUnit;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+
+
 import org.junit.Test;
 
 public class JUnitTest {
@@ -20,7 +22,7 @@ public class JUnitTest {
 	@Test
 	public void testSub1() {
 		int val = JUnit.sub(45, 27);
-		assertEquals(val, 18);
+		assertSame(val, 18);
 	}
 	
 	@Test
@@ -59,4 +61,23 @@ public class JUnitTest {
 		assertEquals(val, 13);
 	}
 
+	@Test
+	public void testBoolean() {
+		boolean val = JUnit.login(true);
+		assertTrue(val);
+	}
+	
+	@Test
+	public void testNull() {
+		String val = null;
+		assertNull(val);
+	}
+	
+	@Test
+	public void testSame() {
+		int val1 = 5;
+		int val2 = 6;
+		assertSame(val1, val2);
+//		assertEquals(val1, val2);
+	}
 }

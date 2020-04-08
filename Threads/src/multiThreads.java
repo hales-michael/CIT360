@@ -16,7 +16,7 @@ class irq extends Thread {
 public class multiThreads {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		System.out.println("Begin Main Thread...");
 		
 		irq req1 = new irq();

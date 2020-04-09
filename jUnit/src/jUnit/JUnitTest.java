@@ -78,6 +78,39 @@ public class JUnitTest {
 		int val1 = 5;
 		int val2 = 6;
 		assertSame(val1, val2);
-//		assertEquals(val1, val2);
+
+	}
+	
+	@Test
+	public void testArrayEquals1() {
+		
+		int[] familyAges = {2,4,44,45};
+		assertArrayEquals(familyAges, new int[]{2,4,44,45});
+	}
+	
+	@Test
+	public void testArrayEquals2() {
+
+		int[] numberOfHotDogs = {1,2,2,3};
+		assertArrayEquals(numberOfHotDogs, new int[]{2,3,4,5});
+	}
+	
+	@Test
+	public void testBoolean2() {
+		boolean val = JUnit.login(false);
+		assertFalse(val);
+	}
+	
+	@Test
+	public void testNotNull() {
+		Object nullObject = null;
+		assertNotNull(nullObject);
+	}
+	
+	@Test
+	public void testnotSame() {
+		int val1 = 8;
+		int val2 = 4;
+		assertNotSame(val1, val2);
 	}
 }
